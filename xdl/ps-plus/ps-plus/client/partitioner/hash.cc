@@ -18,6 +18,8 @@ limitations under the License.
 #include "ps-plus/common/types.h"
 #include "ps-plus/common/hasher.h"
 
+#include <cmath>
+
 namespace ps {
 namespace client {
 namespace partitioner {

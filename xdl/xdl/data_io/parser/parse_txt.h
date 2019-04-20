@@ -18,6 +18,8 @@ limitations under the License.
 
 #include "xdl/data_io/parser/parser.h"
 
+#include <functional>
+
 namespace xdl {
 namespace io {
 

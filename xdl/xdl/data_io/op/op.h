@@ -37,6 +37,8 @@ limitations under the License.
 #include <string>
 #include <map>
 
+#include <functional>
+
 #include "xdl/core/lib/singleton.h"
 #include "xdl/data_io/schema.h"
 

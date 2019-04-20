@@ -8,6 +8,9 @@
 #include <mutex>
 #include <atomic>
 #include <pthread.h>
+
+#include <signal.h>
+
 #include "core/ps_queue_hub/readerwriterqueue.hh"
 #include "core/ps_queue_hub/queue_work_item.hh"
 #include "core/ps_queue_hub/queue_hub_future.hh"

@@ -36,6 +36,8 @@ limitations under the License.
 #include <mutex>
 #include <condition_variable>
 
+#include <functional>
+
 namespace xdl {
 
 template <typename T>

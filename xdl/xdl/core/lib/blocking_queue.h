@@ -40,6 +40,7 @@ limitations under the License.
 #include <set>
 #include <string>
 #include <type_traits>
+#include <functional>
 
 #include "xdl/core/utils/logging.h"
 

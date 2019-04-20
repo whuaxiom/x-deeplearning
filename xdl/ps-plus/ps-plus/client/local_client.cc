@@ -22,6 +22,7 @@ limitations under the License.
 #include "ps-plus/client/partitioner/hash.h"
 
 #include <iostream>
+#include <cmath>
 
 namespace ps {
 namespace client {

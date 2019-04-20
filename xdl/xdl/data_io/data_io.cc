@@ -20,6 +20,8 @@ limitations under the License.
 #include "google/protobuf/text_format.h"
 #include "xdl/core/utils/logging.h"
 
+#include <cstddef>
+
 namespace xdl {
 namespace io {
 

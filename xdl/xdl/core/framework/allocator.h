@@ -19,6 +19,8 @@ limitations under the License.
 #include <unordered_map>
 #include <mutex>
 
+#include <functional>
+
 #include "xdl/core/lib/refcount.h"
 #include "xdl/core/lib/singleton.h"
 
