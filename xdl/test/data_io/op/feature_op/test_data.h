@@ -18,6 +18,8 @@ limitations under the License.
 #include <stdint.h>
 #include <vector>
 
+#include <cmath>
+
 #include "gtest/gtest.h"
 #include "xdl/proto/sample.pb.h"
 

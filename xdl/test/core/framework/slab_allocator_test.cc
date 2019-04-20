@@ -18,6 +18,9 @@ limitations under the License.
 
 #include <deque>
 
+#include <cmath>
+#include <random>
+
 using xdl::Allocator;
 using xdl::SlabAllocator;
 
@@ -25,7 +28,8 @@ namespace {
 class MockAllocator : public Allocator {
  public:
   static constexpr int BlockSize = 1 << 20;
-  static constexpr char* BlockOffset = reinterpret_cast<char*>(42);
+  // static constexpr char* BlockOffset = reinterpret_cast<char*>(42);
+  static constexpr char* BlockOffset = (char*)("42");
   MockAllocator() : counter_(0) {}
   static void* Buffer(uint64_t counter) { return BlockOffset + counter * BlockSize; }
   void* Allocate(size_t size) override {
