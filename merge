@@ -1,0 +1,28 @@
+#查看所有远程库(remote repo)的远程url
+git remote -v;
+
+#添加源分支url
+git remote add upstream 这里替换为源项目url;
+
+#查看所有远程库(remote repo)的远程url
+git remote -v;
+
+#从源分支获取最新的代码
+git fetch upstream;
+
+#切换到主分支
+git checkout master;
+
+#合并本地分支和源分支
+git merge upstream/master;
+
+#push到fork分支
+git push;
+
+543  git pull
+544  git remote -v
+545  git remote add upstream https://github.com/alibaba/x-deeplearning.git
+546  git remote -v
+547  git fetch upstream
+548  git branch -a
+549  git merge upstream/master
