@@ -17,7 +17,7 @@ import tensorflow as tf
 import xdl
 
 reader = xdl.DataReader("r1", # name of reader
-                        paths=["./data0.txt", "./data1.txt"], # file paths
+                        paths=["./data.txt", "./data.txt"], # file paths
                         enable_state=False) # enable reader state
 
 reader.epochs(100).threads(1).batch_size(128).label_count(1)
