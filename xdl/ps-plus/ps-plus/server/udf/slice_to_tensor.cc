@@ -54,7 +54,7 @@ class SliceToTensor : public SimpleUdf<TensorSlices, Tensor*> {
 	  }
 	});
 
-      *result = ps::Tensor(t->Type(), new_shape, buf, nullptr);
+      *result = ps::Tensor(t->Type(), new_shape, buf, nullptr, true);
     }
 
     return Status::Ok();

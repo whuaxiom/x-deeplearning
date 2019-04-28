@@ -34,9 +34,9 @@ class Tensor {
 
   Tensor(DataType type, TensorShape&& shape, Initializer* initializer, bool init = true);
 
-  Tensor(DataType type, const TensorShape& shape, char* buffer, Initializer* initializer);
+  Tensor(DataType type, const TensorShape& shape, char* buffer, Initializer* initializer, bool own_buffer = false);
 
-  Tensor(DataType type, TensorShape&& shape, char* buffer, Initializer* initializer);
+  Tensor(DataType type, TensorShape&& shape, char* buffer, Initializer* initializer, bool own_buffer = false);
 
   Tensor(const Tensor& rhs);
 

@@ -38,11 +38,11 @@ Tensor::Tensor(DataType type, TensorShape&& shape, Initializer* initializer, boo
   }
 }
 
-Tensor::Tensor(DataType type, const TensorShape& shape, char* buffer, Initializer* initializer)
-  : state_(new State(buffer, type, shape, initializer, false)) {}
+Tensor::Tensor(DataType type, const TensorShape& shape, char* buffer, Initializer* initializer, bool own_buffer)
+  : state_(new State(buffer, type, shape, initializer, own_buffer)) {}
 
-Tensor::Tensor(DataType type, TensorShape&& shape, char* buffer, Initializer* initializer)
-  : state_(new State(buffer, type, std::move(shape), initializer, false)) {}
+Tensor::Tensor(DataType type, TensorShape&& shape, char* buffer, Initializer* initializer, bool own_buffer)
+  : state_(new State(buffer, type, std::move(shape), initializer, own_buffer)) {}
 
 Tensor::Tensor(const Tensor& rhs) : state_(rhs.state_) {
   Ref();
